@@ -1,0 +1,3 @@
+// output the sum of two inputs 
+def solution(param1, param2):
+    return param1 + param2
