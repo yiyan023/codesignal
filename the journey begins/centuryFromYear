@@ -1,0 +1,3 @@
+//output the century that the year is in
+def solution(year):
+    return math.ceil(year/100)
