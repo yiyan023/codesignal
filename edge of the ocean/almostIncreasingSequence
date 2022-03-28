@@ -1,0 +1,14 @@
+// Return true if it is possible to remove one element from the array in order to get a strictly increasing sequence, otherwise return false.
+def solution(sequence):
+    error1=0;
+    error2=0;
+    
+    for i in range(len(sequence)-1):
+        if sequence[i] >= sequence[i+1]:
+            error1+=1;
+            
+    for j in range(len(sequence)-2):
+        if sequence[j] >= sequence[j+2]:
+            error2+=1;
+        
+    return error1<2 and error2<2;
